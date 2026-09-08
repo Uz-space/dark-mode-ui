@@ -47,7 +47,7 @@ function Index() {
           <ActionButton color="blue">TronPick</ActionButton>
           <ActionButton color="blue">LitePick</ActionButton>
           <ActionButton color="blue" fullWidth>DogePick</ActionButton>
-          <ActionButton color="red" icon={<SosIcon />} fullWidth>Yordam</ActionButton>
+          <ActionButton color="red" fullWidth>Yordam</ActionButton>
           <ActionButton color="green" icon={<GearIcon />}>Sozlamalar</ActionButton>
           <ActionButton color="green" icon={<RefreshIcon />}>Yangilash</ActionButton>
         </div>
