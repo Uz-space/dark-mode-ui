@@ -47,7 +47,7 @@ function Index() {
           <ActionButton color="blue">TronPick</ActionButton>
           <ActionButton color="blue">LitePick</ActionButton>
           <ActionButton color="blue" fullWidth>DogePick</ActionButton>
-          <ActionButton color="red" icon={<SosIcon />} fullWidth>Yordam</ActionButton>
+          <ActionButton color="red" fullWidth>Yordam</ActionButton>
           <ActionButton color="green" icon={<GearIcon />}>Sozlamalar</ActionButton>
           <ActionButton color="green" icon={<RefreshIcon />}>Yangilash</ActionButton>
         </div>
@@ -115,11 +115,13 @@ function RefreshIcon() {
       className="h-6 w-6"
       stroke="currentColor"
       strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
-      <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
-      <path d="M3 5v7h7" />
       <path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
-      <path d="M3 19v-7h7" />
+      <path d="M3 5v6h6" />
+      <path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16" />
+      <path d="M21 19v-6h-6" />
     </svg>
   );
 }
