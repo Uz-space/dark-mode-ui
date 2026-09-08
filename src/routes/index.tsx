@@ -90,10 +90,12 @@ function ActionButton({
   color,
   icon,
   children,
+  fullWidth = false,
 }: {
   color: "blue" | "red" | "green";
   icon?: React.ReactNode;
   children: React.ReactNode;
+  fullWidth?: boolean;
 }) {
   const colorClasses = {
     blue: "bg-blue-button hover:bg-blue-button/90",
@@ -103,7 +105,7 @@ function ActionButton({
 
   return (
     <button
-      className={`flex items-center justify-center gap-2 rounded-2xl ${colorClasses[color]} px-4 py-5 text-lg font-semibold text-white shadow-lg transition-colors active:scale-[0.98]`}
+      className={`flex items-center justify-center gap-2 rounded-2xl ${colorClasses[color]} px-4 py-5 text-lg font-semibold text-white shadow-lg transition-colors active:scale-[0.98] ${fullWidth ? "col-span-2" : ""}`}
     >
       {icon ? <span className="flex w-6 justify-center">{icon}</span> : null}
       <span>{children}</span>
