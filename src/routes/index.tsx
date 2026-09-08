@@ -90,12 +90,10 @@ function ActionButton({
   color,
   icon,
   children,
-  fullWidth = false,
 }: {
   color: "blue" | "red" | "green";
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   children: React.ReactNode;
-  fullWidth?: boolean;
 }) {
   const colorClasses = {
     blue: "bg-blue-button hover:bg-blue-button/90",
@@ -105,39 +103,12 @@ function ActionButton({
 
   return (
     <button
-      className={`flex items-center justify-center gap-2 rounded-2xl ${colorClasses[color]} px-4 py-4 text-lg font-semibold text-white shadow-lg transition-colors active:scale-[0.98] ${fullWidth ? "col-span-2" : ""}`}
+      className={`flex items-center justify-center gap-2 rounded-2xl ${colorClasses[color]} px-4 py-5 text-lg font-semibold text-white shadow-lg transition-colors active:scale-[0.98]`}
     >
-      {icon}
-      {children}
+      {icon ? <span className="flex w-6 justify-center">{icon}</span> : null}
+      <span>{children}</span>
+      {icon ? <span className="w-6" aria-hidden="true" /> : null}
     </button>
-  );
-}
-
-function DiamondIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      className="h-6 w-6"
-      stroke="currentColor"
-      strokeWidth="1.5"
-    >
-      <path d="M12 2L2 12l10 10 10-10L12 2z" fill="#93c5fd" />
-    </svg>
-  );
-}
-
-function BlueOrbIcon() {
-  return (
-    <div className="h-6 w-6 rounded-full bg-gradient-to-b from-blue-400 to-blue-700 ring-1 ring-white/20" />
-  );
-}
-
-function DogIcon() {
-  return (
-    <span className="text-2xl" role="img" aria-label="dog">
-      🐕
-    </span>
   );
 }
 
