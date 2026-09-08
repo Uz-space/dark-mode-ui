@@ -59,31 +59,14 @@ function Index() {
           </div>
         </div>
 
-        {/* Timer */}
-        <div className="flex justify-end px-1">
-          <span className="text-lg font-medium text-white/70">04:10</span>
-        </div>
-
-        {/* Action buttons */}
+        {/* Action buttons — uniform 2×3 grid */}
         <div className="grid grid-cols-2 gap-3">
-          <ActionButton color="blue" icon={<DiamondIcon />}>
-            TronPick
-          </ActionButton>
-          <ActionButton color="blue" icon={<BlueOrbIcon />}>
-            LitePick
-          </ActionButton>
-          <ActionButton color="blue" icon={<DogIcon />} fullWidth>
-            DogePick
-          </ActionButton>
-          <ActionButton color="red" icon={<SosIcon />} fullWidth>
-            Yordam
-          </ActionButton>
-          <ActionButton color="green" icon={<GearIcon />}>
-            Sozlamalar
-          </ActionButton>
-          <ActionButton color="green" icon={<RefreshIcon />}>
-            Yangilash
-          </ActionButton>
+          <ActionButton color="blue">TronPick</ActionButton>
+          <ActionButton color="blue">LitePick</ActionButton>
+          <ActionButton color="blue">DogePick</ActionButton>
+          <ActionButton color="red" icon={<SosIcon />}>Yordam</ActionButton>
+          <ActionButton color="green" icon={<GearIcon />}>Sozlamalar</ActionButton>
+          <ActionButton color="green" icon={<RefreshIcon />}>Yangilash</ActionButton>
         </div>
       </main>
     </div>
