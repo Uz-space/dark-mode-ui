@@ -34,29 +34,12 @@ function Index() {
           </span>
         </div>
 
-        {/* Score board — same width as ALPHA */}
-        <div className="w-full overflow-hidden rounded-3xl bg-surface shadow-lg">
-          <div className="grid grid-cols-2 divide-x divide-white/10">
-            {/* Team 1 */}
-            <div className="flex flex-col items-center py-4">
-              <span className="text-3xl font-bold text-white">1</span>
-              <div className="mt-3 flex gap-1.5">
-                {Array.from({ length: 4 }).map((_, i) => (
-                  <Orb key={`blue-${i}`} color="blue" />
-                ))}
-              </div>
-            </div>
-
-            {/* Team 2 */}
-            <div className="flex flex-col items-center py-4">
-              <span className="text-3xl font-bold text-white">2</span>
-              <div className="mt-3 flex gap-1.5">
-                {Array.from({ length: 4 }).map((_, i) => (
-                  <Orb key={`red-${i}`} color="red" />
-                ))}
-              </div>
-            </div>
-          </div>
+        {/* Balance board — same width as ALPHA */}
+        <div className="flex w-full flex-col items-center rounded-3xl bg-surface px-6 py-6 shadow-lg">
+          <span className="text-xl font-bold tracking-wide text-white">
+            XEVIL BALANS
+          </span>
+          <span className="mt-1 text-2xl font-semibold text-white">0.00000</span>
         </div>
 
         {/* Action buttons — original layout, uniform heights */}
