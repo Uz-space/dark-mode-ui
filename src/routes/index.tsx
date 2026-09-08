@@ -75,7 +75,7 @@ function ActionButton({
 
   return (
     <button
-      className={`flex items-center justify-center gap-2 rounded-2xl ${colorClasses[color]} px-4 py-3.5 text-lg font-semibold text-white shadow-lg transition-colors active:scale-[0.98] ${fullWidth ? "col-span-2" : ""}`}
+      className={`flex items-center justify-center gap-2 rounded-xl ${colorClasses[color]} px-4 py-3.5 text-lg font-semibold text-white shadow-lg transition-colors active:scale-[0.98] ${fullWidth ? "col-span-2" : ""}`}
     >
       {icon ? <span className="flex w-6 justify-center">{icon}</span> : null}
       <span>{children}</span>
