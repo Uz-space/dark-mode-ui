@@ -56,19 +56,6 @@ function Index() {
   );
 }
 
-function Orb({ color }: { color: "blue" | "red" }) {
-  const gradient =
-    color === "blue"
-      ? "from-blue-400 to-blue-700"
-      : "from-red-400 to-red-700";
-
-  return (
-    <div
-      className={`h-6 w-6 rounded-full bg-gradient-to-b ${gradient} shadow-inner ring-1 ring-white/20`}
-    />
-  );
-}
-
 function ActionButton({
   color,
   icon,
