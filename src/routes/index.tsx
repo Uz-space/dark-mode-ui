@@ -27,19 +27,24 @@ function Index() {
       />
 
       <main className="relative z-10 w-full max-w-sm space-y-4">
-        {/* ALPHA header — full width */}
-        <div className="flex w-full items-center justify-center rounded-3xl bg-surface px-6 py-5 shadow-lg">
-          <span className="text-2xl font-bold tracking-widest text-white">
-            ALPHA
-          </span>
-        </div>
+        {/* ALPHA + Balance wrapped in one card, separate from buttons */}
+        <div className="w-full overflow-hidden rounded-3xl bg-surface shadow-lg">
+          <div className="flex w-full items-center justify-center px-6 py-5">
+            <span className="text-2xl font-bold tracking-widest text-white">
+              ALPHA
+            </span>
+          </div>
 
-        {/* Balance board — same width as ALPHA */}
-        <div className="flex w-full flex-col items-center rounded-3xl bg-surface px-6 py-6 shadow-lg">
-          <span className="text-xl font-bold tracking-wide text-white">
-            XEVIL BALANS
-          </span>
-          <span className="mt-1 text-2xl font-semibold text-white">0.00000</span>
+          <div className="h-px w-full bg-white/10" />
+
+          <div className="flex w-full flex-col items-center px-6 py-5">
+            <span className="text-xl font-bold tracking-wide text-white">
+              XEVIL BALANS
+            </span>
+            <span className="mt-1 text-2xl font-semibold text-white">
+              0.00000
+            </span>
+          </div>
         </div>
 
         {/* Action buttons — original layout, uniform heights */}
