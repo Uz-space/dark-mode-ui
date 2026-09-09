@@ -120,12 +120,8 @@ function StatsView({ name, onBack }: { name: PickName; onBack: () => void }) {
         <ActionButton color="red" fullWidth icon={<PlusIcon />}>
           Akkaunt qo&apos;shish
         </ActionButton>
-        <ActionButton color="green" icon={<PlayIcon />}>
-          Ishga tushirish
-        </ActionButton>
-        <ActionButton color="red" icon={<StopIcon />}>
-          To&apos;xtatish
-        </ActionButton>
+        <ActionButton color="green">Ishga tushirish</ActionButton>
+        <ActionButton color="red">To&apos;xtatish</ActionButton>
         <ActionButton color="green" icon={<RefreshIcon />}>
           Yangilash
         </ActionButton>
@@ -159,7 +155,7 @@ function ActionButton({
   return (
     <button
       onClick={onClick}
-      className={`flex items-center justify-center rounded-xl ${colorClasses[color]} px-4 py-3.5 text-lg font-semibold text-white shadow-lg transition-colors active:scale-[0.98] ${fullWidth ? "col-span-2" : ""}`}
+      className={`flex items-center justify-center rounded-xl ${colorClasses[color]} px-4 h-14 text-lg font-semibold text-white shadow-lg transition-colors active:scale-[0.98] ${fullWidth ? "col-span-2" : ""}`}
     >
       {icon && (
         <span className="mr-2 flex h-5 w-5 items-center justify-center">
