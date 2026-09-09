@@ -91,27 +91,31 @@ function StatsView({ name, onBack }: { name: PickName; onBack: () => void }) {
         </span>
       </div>
 
-      {/* Akkaunt, Keyingi olish, Balans — bitta table/karta ichida */}
-      <div className="flex w-full flex-col rounded-3xl border border-white/20 bg-surface px-6 py-5 shadow-lg">
-        <div className="flex items-center justify-between py-1">
-          <span className="text-lg font-bold tracking-wide text-white">
-            AKKAUNT
-          </span>
-          <span className="text-xl font-semibold text-white">—</span>
-        </div>
-        <div className="my-2 h-px w-full bg-white/10" />
-        <div className="flex items-center justify-between py-1">
-          <span className="text-lg font-bold tracking-wide text-white">
-            KEYINGI OLISH
-          </span>
-          <span className="text-xl font-semibold text-white">--:--</span>
-        </div>
-        <div className="my-2 h-px w-full bg-white/10" />
-        <div className="flex items-center justify-between py-1">
-          <span className="text-lg font-bold tracking-wide text-white">
-            BALANS
-          </span>
-          <span className="text-xl font-semibold text-white">0.00000</span>
+      {/* Akkaunt, Keyingi olish, Balans — yonma-yon 3 ustun, label yuqorida value tagida */}
+      <div className="flex w-full flex-col rounded-3xl border border-white/20 bg-surface px-3 py-5 shadow-lg">
+        <div className="grid grid-cols-3 divide-x divide-white/10">
+          <div className="flex flex-col items-center px-1">
+            <span className="text-[10px] font-bold tracking-wide text-white/70">
+              AKKAUNT
+            </span>
+            <span className="mt-1 text-base font-semibold text-white">—</span>
+          </div>
+          <div className="flex flex-col items-center px-1">
+            <span className="text-[10px] font-bold tracking-wide text-white/70">
+              KEYINGI OLISH
+            </span>
+            <span className="mt-1 text-base font-semibold text-white">
+              --:--
+            </span>
+          </div>
+          <div className="flex flex-col items-center px-1">
+            <span className="text-[10px] font-bold tracking-wide text-white/70">
+              BALANS
+            </span>
+            <span className="mt-1 text-base font-semibold text-white">
+              0.00000
+            </span>
+          </div>
         </div>
       </div>
 
