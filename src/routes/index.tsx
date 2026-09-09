@@ -126,10 +126,7 @@ function StatsView({ name, onBack }: { name: PickName; onBack: () => void }) {
         </ActionButton>
         <ActionButton color="green">Ishga tushirish</ActionButton>
         <ActionButton color="red">To&apos;xtatish</ActionButton>
-        <ActionButton color="green" icon={<RefreshIcon />}>
-          Yangilash
-        </ActionButton>
-        <ActionButton color="green" icon={<BackIcon />} onClick={onBack}>
+        <ActionButton color="green" fullWidth icon={<BackIcon />} onClick={onBack}>
           Orqaga
         </ActionButton>
       </div>
