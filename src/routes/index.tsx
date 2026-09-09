@@ -142,11 +142,13 @@ function ActionButton({
   children,
   fullWidth = false,
   onClick,
+  icon,
 }: {
   color: "blue" | "red" | "green";
   children: React.ReactNode;
   fullWidth?: boolean;
   onClick?: () => void;
+  icon?: React.ReactNode;
 }) {
   const colorClasses = {
     blue: "bg-blue-button hover:bg-blue-button/90",
@@ -159,7 +161,76 @@ function ActionButton({
       onClick={onClick}
       className={`flex items-center justify-center rounded-xl ${colorClasses[color]} px-4 py-3.5 text-lg font-semibold text-white shadow-lg transition-colors active:scale-[0.98] ${fullWidth ? "col-span-2" : ""}`}
     >
+      {icon && (
+        <span className="mr-2 flex h-5 w-5 items-center justify-center">
+          {icon}
+        </span>
+      )}
       <span>{children}</span>
     </button>
+  );
+}
+
+function PlusIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5"
+    >
+      <path d="M12 5v14M5 12h14" />
+    </svg>
+  );
+}
+
+function PlayIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+      <path d="M8 5v14l11-7z" />
+    </svg>
+  );
+}
+
+function StopIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+      <rect x="6" y="6" width="12" height="12" rx="2" />
+    </svg>
+  );
+}
+
+function RefreshIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5"
+    >
+      <path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+    </svg>
+  );
+}
+
+function BackIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-5 w-5"
+    >
+      <path d="M19 12H5M12 19l-7-7 7-7" />
+    </svg>
   );
 }
