@@ -91,28 +91,28 @@ function StatsView({ name, onBack }: { name: PickName; onBack: () => void }) {
         </span>
       </div>
 
-      {/* Akkaunt — same style as XEVIL BALANS card */}
-      <div className="flex w-full flex-col items-center rounded-3xl border border-white/20 bg-surface px-6 py-6 shadow-lg">
-        <span className="text-xl font-bold tracking-wide text-white">
-          AKKAUNT
-        </span>
-        <span className="mt-1 text-2xl font-semibold text-white">—</span>
-      </div>
-
-      {/* Keyingi olish */}
-      <div className="flex w-full flex-col items-center rounded-3xl border border-white/20 bg-surface px-6 py-6 shadow-lg">
-        <span className="text-xl font-bold tracking-wide text-white">
-          KEYINGI OLISH
-        </span>
-        <span className="mt-1 text-2xl font-semibold text-white">--:--</span>
-      </div>
-
-      {/* Balans */}
-      <div className="flex w-full flex-col items-center rounded-3xl border border-white/20 bg-surface px-6 py-6 shadow-lg">
-        <span className="text-xl font-bold tracking-wide text-white">
-          BALANS
-        </span>
-        <span className="mt-1 text-2xl font-semibold text-white">0.00000</span>
+      {/* Akkaunt, Keyingi olish, Balans — bitta table/karta ichida */}
+      <div className="flex w-full flex-col rounded-3xl border border-white/20 bg-surface px-6 py-5 shadow-lg">
+        <div className="flex items-center justify-between py-1">
+          <span className="text-lg font-bold tracking-wide text-white">
+            AKKAUNT
+          </span>
+          <span className="text-xl font-semibold text-white">—</span>
+        </div>
+        <div className="my-2 h-px w-full bg-white/10" />
+        <div className="flex items-center justify-between py-1">
+          <span className="text-lg font-bold tracking-wide text-white">
+            KEYINGI OLISH
+          </span>
+          <span className="text-xl font-semibold text-white">--:--</span>
+        </div>
+        <div className="my-2 h-px w-full bg-white/10" />
+        <div className="flex items-center justify-between py-1">
+          <span className="text-lg font-bold tracking-wide text-white">
+            BALANS
+          </span>
+          <span className="text-xl font-semibold text-white">0.00000</span>
+        </div>
       </div>
 
       {/* Orqaga */}
