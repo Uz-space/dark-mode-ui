@@ -48,8 +48,8 @@ function Index() {
           <ActionButton color="blue">LitePick</ActionButton>
           <ActionButton color="blue" fullWidth>DogePick</ActionButton>
           <ActionButton color="red" fullWidth>Yordam</ActionButton>
-          <ActionButton color="green" icon={<GearIcon />}>Sozlamalar</ActionButton>
-          <ActionButton color="green" icon={<RefreshIcon />}>Yangilash</ActionButton>
+          <ActionButton color="green">Sozlamalar</ActionButton>
+          <ActionButton color="green">Yangilash</ActionButton>
         </div>
       </main>
     </div>
