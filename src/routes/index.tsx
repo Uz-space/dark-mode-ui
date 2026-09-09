@@ -115,9 +115,21 @@ function StatsView({ name, onBack }: { name: PickName; onBack: () => void }) {
         </div>
       </div>
 
-      {/* Orqaga */}
-      <div className="grid grid-cols-1 gap-3">
-        <ActionButton color="red" fullWidth onClick={onBack}>
+      {/* Tugmalar */}
+      <div className="grid grid-cols-2 gap-3">
+        <ActionButton color="red" fullWidth icon={<PlusIcon />}>
+          Akkaunt qo&apos;shish
+        </ActionButton>
+        <ActionButton color="green" icon={<PlayIcon />}>
+          Ishga tushirish
+        </ActionButton>
+        <ActionButton color="red" icon={<StopIcon />}>
+          To&apos;xtatish
+        </ActionButton>
+        <ActionButton color="green" icon={<RefreshIcon />}>
+          Yangilash
+        </ActionButton>
+        <ActionButton color="green" icon={<BackIcon />} onClick={onBack}>
           Orqaga
         </ActionButton>
       </div>
